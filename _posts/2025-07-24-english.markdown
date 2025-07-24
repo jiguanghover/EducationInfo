@@ -28,3 +28,109 @@ date: 2025-07-24
 | yesterday| 昨天     |
 
 你可以通过记忆和使用这些单词，提升你的英语词汇量！
+
+[//]: # (## 英语学习图片展示)
+
+[//]: # ()
+[//]: # (<div style="display: flex; flex-wrap: wrap; gap: 16px;">)
+
+[//]: # (  <img src="/images/English/english_001.webp" alt="english_001" width="200" />)
+
+[//]: # (  <img src="/images/English/english_002.webp" alt="english_002" width="200" />)
+
+[//]: # (  <img src="/images/English/english_003.webp" alt="english_003" width="200" />)
+
+[//]: # (  <img src="/images/English/english_004.webp" alt="english_004" width="200" />)
+
+[//]: # (  <img src="/images/English/english_005.webp" alt="english_005" width="200" />)
+
+[//]: # (  <img src="/images/English/english_006.webp" alt="english_006" width="200" />)
+
+[//]: # (  <img src="/images/English/english_007.webp" alt="english_007" width="200" />)
+
+[//]: # (  <img src="/images/English/english_008.webp" alt="english_008" width="200" />)
+
+[//]: # (</div>)
+
+## 英语学习图片预览
+
+<style>
+.preview-img {
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.preview-img:hover {
+  box-shadow: 0 0 8px #888;
+}
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+.img-modal:target {
+  display: flex;
+}
+.img-modal img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #000;
+}
+.img-modal .close {
+  position: absolute;
+  top: 30px; right: 40px;
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <a href="#img1"><img class="preview-img" src="/images/English/english_001.webp" alt="english_001" width="200" /></a>
+  <a href="#img2"><img class="preview-img" src="/images/English/english_002.webp" alt="english_002" width="200" /></a>
+  <a href="#img3"><img class="preview-img" src="/images/English/english_003.webp" alt="english_003" width="200" /></a>
+  <a href="#img4"><img class="preview-img" src="/images/English/english_004.webp" alt="english_004" width="200" /></a>
+  <a href="#img5"><img class="preview-img" src="/images/English/english_005.webp" alt="english_005" width="200" /></a>
+  <a href="#img6"><img class="preview-img" src="/images/English/english_006.webp" alt="english_006" width="200" /></a>
+  <a href="#img7"><img class="preview-img" src="/images/English/english_007.webp" alt="english_007" width="200" /></a>
+  <a href="#img8"><img class="preview-img" src="/images/English/english_008.webp" alt="english_008" width="200" /></a>
+</div>
+
+<!-- Modal dialogs for each image -->
+<div id="img1" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_001.webp" alt="english_001" />
+</div>
+<div id="img2" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_002.webp" alt="english_002" />
+</div>
+<div id="img3" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_003.webp" alt="english_003" />
+</div>
+<div id="img4" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_004.webp" alt="english_004" />
+</div>
+<div id="img5" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_005.webp" alt="english_005" />
+</div>
+<div id="img6" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_006.webp" alt="english_006" />
+</div>
+<div id="img7" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_007.webp" alt="english_007" />
+</div>
+<div id="img8" class="img-modal">
+  <a href="#" class="close">&times;</a>
+  <img src="/images/English/english_008.webp" alt="english_008" />
+</div>
