@@ -1,0 +1,30 @@
+---
+layout: post
+title: "我的英语博客"
+date: 2025-07-24
+---
+
+## 小学六年级常用英语单词
+
+| 英文单词 | 中文释义 |
+|----------|----------|
+| animal   | 动物     |
+| country  | 国家     |
+| favorite | 最喜欢的 |
+| holiday  | 假期     |
+| important| 重要的   |
+| journey  | 旅行     |
+| library  | 图书馆   |
+| message  | 信息     |
+| nature   | 自然     |
+| opinion  | 观点     |
+| question | 问题     |
+| remember | 记得     |
+| sometimes| 有时     |
+| together | 一起     |
+| usually  | 通常     |
+| visit    | 参观     |
+| weekend  | 周末     |
+| yesterday| 昨天     |
+
+你可以通过记忆和使用这些单词，提升你的英语词汇量！
