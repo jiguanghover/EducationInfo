@@ -3,12 +3,3 @@ layout: home
 title: "首页"
 ---
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      <!--<p>{{ post.excerpt }}</p> -->
-      <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-    </li>
-  {% endfor %}
-</ul>
