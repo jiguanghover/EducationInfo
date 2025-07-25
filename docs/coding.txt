@@ -19,3 +19,7 @@
     {% endif %}
   {% endfor %}
 </div>
+
+
+{% include word_card.md %}
+{% include character_card.md %}

@@ -113,4 +113,57 @@ date: 2025-07-24
   <img src="{{ site.baseurl }}/images/English/english_008.webp" alt="english_008" />
 </div>
 
-{% include word_card.md %}
+<!-- 单词分类下拉菜单 -->
+<label for="category-select" style="font-weight:bold; font-size:1.1em; margin-right:8px;">选择字母分类：</label>
+<select id="category-select" style="padding:4px 10px; font-size:1em; border-radius:6px; border:1px solid #bbb;">
+  <option value="A字头">A字头</option>
+  <option value="B字头">B字头</option>
+  <option value="C字头">C字头</option>
+  <option value="D字头">D字头</option>
+  <option value="E字头">E字头</option>
+  <option value="F字头">F字头</option>
+  <option value="G字头">G字头</option>
+  <option value="H字头">H字头</option>
+  <option value="I字头">I字头</option>
+  <option value="J字头">J字头</option>
+  <option value="K字头">K字头</option>
+  <option value="L字头">L字头</option>
+  <option value="M字头">M字头</option>
+  <option value="N字头">N字头</option>
+  <option value="O字头">O字头</option>
+  <option value="P字头">P字头</option>
+  <option value="Q字头">Q字头</option>
+  <option value="R字头">R字头</option>
+  <option value="S字头">S字头</option>
+  <option value="T字头">T字头</option>
+  <option value="U字头">U字头</option>
+  <option value="V字头">V字头</option>
+  <option value="W字头">W字头</option>
+  <option value="XYZ字头">XYZ字头</option>
+</select>
+
+<div id="category-content" style="margin-top: 28px; background: #f8fafd; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); padding: 24px 12px 18px 12px; min-height: 120px;"></div>
+
+<!-- 隐藏所有分类内容，供JS提取 -->
+<div id="all-character-md" style="display:none;">
+{% include character_card.md %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+function loadCategory(category) {
+  const allMd = document.getElementById('all-character-md').textContent;
+  const regex = new RegExp(`## ${category}([\\s\\S]*?)(?=## |$)`, 'g');
+  const match = regex.exec(allMd);
+  if (match) {
+    document.getElementById('category-content').innerHTML = marked.parse('## ' + category + match[1]);
+  } else {
+    document.getElementById('category-content').innerHTML = '<em>未找到该分类内容</em>';
+  }
+}
+document.getElementById('category-select').addEventListener('change', function() {
+  loadCategory(this.value);
+});
+loadCategory(document.getElementById('category-select').value);
+</script>
+
