@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我的数学课程"
+title: "我的数学博客"
 date: 2025-07-24
 ---
 

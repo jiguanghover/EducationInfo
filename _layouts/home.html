@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">{{ page.title | default: "Posts" }}</h1>
+  {{ content }}
+  {%- if site.posts.size > 0 -%}
+    <style>
+      .blog-list-flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 24px;
+        width: 100%;
+        justify-content: space-between;
+      }
+      .blog-card {
+        flex: 0 0 48%;
+        box-sizing: border-box;
+        margin-bottom: 16px;
+        background: #fafbfc;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        transition: box-shadow 0.2s, transform 0.2s;
+        padding: 28px 18px 22px 18px;
+        border: 1px solid #eee;
+        min-width: 220px;
+        max-width: 100%;
+      }
+      .blog-card:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        background: #f0f7ff;
+        transform: translateY(-2px) scale(1.02);
+      }
+      .blog-card a {
+        font-size: 1.18em;
+        color: #1a237e;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      .blog-card a:hover {
+        color: #1976d2;
+        text-decoration: underline;
+      }
+      @media (max-width: 700px) {
+        .blog-card { flex: 0 0 100%; }
+        .blog-list-flex { gap: 12px; }
+      }
+    </style>
+    <div class="blog-list-flex">
+      {%- for post in site.posts -%}
+        <div class="blog-card">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
+</div>
