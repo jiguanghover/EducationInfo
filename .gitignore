@@ -1,6 +1,9 @@
 .idea/
 .idea/*
 
+FileDeal/
+FileDeal/*
+
 _site
 .sass-cache
 .jekyll-cache
